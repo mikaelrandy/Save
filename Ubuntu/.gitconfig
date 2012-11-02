@@ -1,0 +1,13 @@
+[user]
+	name = Mikael Randy
+	email = 
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	board = "!f() { php /home/mrandy/Vendors/Gitboard/gitboard.php $@; }; f"
+	st = status
+	out = !git fetch && git log --pretty=oneline --abbrev-commit --graph @{u}..
+	in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}

@@ -1,0 +1,23 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Behat Snippets",
+		"CoffeeScript",
+		"Cucumber",
+		"DocBlockr",
+		"FileDiffs",
+		"GoldenRatio",
+		"Goto Documentation",
+		"Markdown Preview",
+		"nginx",
+		"Package Control",
+		"PHP-Twig",
+		"Sass",
+		"Sublimerge",
+		"Theme - Nexus",
+		"Theme - Nil",
+		"Theme - Soda",
+		"Xdebug"
+	]
+}

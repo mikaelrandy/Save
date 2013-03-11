@@ -1,10 +1,12 @@
 {
+	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+	"fade_fold_buttons": false,
 	"font_size": 11,
-	"theme": "Nexus.sublime-theme",
-
-    // Tips from http://wesbos.com/sublime-text-5-visual-tweaks/
-    "highlight_line": true,
-    "fade_fold_buttons": false,
-    "bold_folder_labels": true
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Nexus.sublime-theme"
 }

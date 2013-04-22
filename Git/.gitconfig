@@ -1,0 +1,20 @@
+[color]
+  ui = true
+[alias]
+  # Repo operations
+  co = checkout
+  ci = commit
+  unadd = reset HEAD --
+
+  # Repo status
+  st = status
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  out = !git fetch && git log --pretty=oneline --abbrev-commit --graph @{u}..
+  in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
+  cached = diff --cached
+
+  # Show aliases
+  aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+
+  # Github specifics
+  fetch-pr = "!f() { git fetch $1 refs/pull/$2/head:refs/remotes/pr/$2; }; f"

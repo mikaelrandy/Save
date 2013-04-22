@@ -4,6 +4,7 @@
   # Repo operations
   co = checkout
   ci = commit
+  amend = commit --amend
   unadd = reset HEAD --
 
   # Repo status

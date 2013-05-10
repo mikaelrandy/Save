@@ -5,7 +5,7 @@
   co = checkout
   ci = commit
   amend = commit --amend
-  unadd = reset HEAD --
+  unstage = reset HEAD --
 
   # Repo status
   st = status

@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"ApacheConf.tmLanguage",
 		"atoum",
 		"Behat Snippets",
 		"CoffeeScript",
@@ -13,6 +14,7 @@
 		"GitGutter",
 		"GoldenRatio",
 		"Goto Documentation",
+		"hosts",
 		"Markdown Preview",
 		"nginx",
 		"Package Control",

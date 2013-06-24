@@ -1,0 +1,13 @@
+[
+    // New folder
+    { "keys": ["super+alt+n"], "command": "new_folder" },
+
+    { "keys": ["f1"], "command": "goto_documentation" },
+    { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
+
+    // Toggle comments
+    { "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+
+    // Find in folders
+    { "keys": ["super+alt+f"], "command": "find_in_folder", "args": {"dirs": []} }
+]

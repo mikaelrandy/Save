@@ -9,5 +9,5 @@
     { "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
 
     // Find in folders
-    { "keys": ["super+alt+f"], "command": "find_in_folder", "args": {"dirs": []} }
+    { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} }
 ]

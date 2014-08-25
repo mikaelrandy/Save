@@ -14,6 +14,8 @@
   unstage = reset HEAD --
   m = checkout master
   fo = fetch origin
+  up = !git fo && git pull
+  update = up
   mom = merge origin master
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d\
             && git remote prune origin

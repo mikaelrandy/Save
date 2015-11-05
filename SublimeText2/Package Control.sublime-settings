@@ -1,25 +1,35 @@
 {
 	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Pandoc (Markdown)"
+	],
 	"installed_packages":
 	[
 		"Alignment",
 		"ApacheConf.tmLanguage",
 		"Behat Snippets",
+		"Better CoffeeScript",
 		"Cucumber",
+		"DashDoc",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"Emmet",
 		"FileDiffs",
 		"GitGutter",
 		"GoldenRatio",
+		"Handlebars",
 		"hosts",
 		"INI",
+		"JSX",
 		"Markdown Preview",
 		"nginx",
 		"Package Control",
 		"Pandoc (Markdown)",
 		"PHP-Twig",
 		"Pretty JSON",
+		"ReactJS",
 		"SideBarEnhancements",
 		"SideBarGit",
 		"SmartMarkdown",
@@ -29,6 +39,7 @@
 		"Theme - Nexus",
 		"Theme - Nil",
 		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
 		"Vagrant"
 	]
 }

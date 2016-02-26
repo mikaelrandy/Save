@@ -26,3 +26,5 @@ Puis modifier le fichier `~/.zshrc` et modifier la ligne suivant :
 ```bash
 ZSH_THEME="mikaelrandy"
 ```
+
+NB : pour que le thème fonctionne, il faut installer [powerline](http://powerline.readthedocs.org/en/master/installation/osx.html) et choisir une [police compatible](https://github.com/powerline/fonts). Habituellement, j'utilise la police "Inconsolata for Powerline".

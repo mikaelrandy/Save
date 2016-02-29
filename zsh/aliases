@@ -13,18 +13,27 @@ alias lh='ls -lh'
 alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 alias nginx.restart='nginx.stop && nginx.start'
-alias nginx.logs.error='tail -250f /usr/local/etc/nginx/logs/error.log'
-alias nginx.logs.access='tail -250f /usr/local/etc/nginx/logs/access.log'
-alias nginx.logs.default.access='tail -250f /usr/local/etc/nginx/logs/default.access.log'
-alias nginx.logs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/default-ssl.access.log'
-alias nginx.logs.phpmyadmin.error='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.error.log'
-alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.access.log'
+
 # PHP
-alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
-alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
-alias php-fpm.restart='php-fpm.stop && php-fpm.start'
+alias php-fpm.70.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
+alias php-fpm.70.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
+alias php-fpm.70.restart='php-fpm.stop && php-fpm.start'
+
+alias php-fpm.56.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
+alias php-fpm.56.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
+alias php-fpm.56.restart='php-fpm.56.stop && php-fpm.56.start'
+
+alias php-fpm.start="php-fpm.70.start"
+alias php-fpm.stop="php-fpm.70.stop"
+alias php-fpm.restart="php-fpm.70.restart"
+
+
 # Mysql
 alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
 alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
 alias mysql.restart='mysql.stop && mysql.start'
 
+# Blackfire
+alias blackfire.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.blackfire-agent.plist"
+alias blackfire.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.blackfire-agent.plist"
+alias blackfire.restart="blackfire.stop && blackfire.start"

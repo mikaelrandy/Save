@@ -1,0 +1,67 @@
+ZSH_THEME="mikaelrandy"
+
+# Include shared aliases
+. ~/Workspace/perso/Save/zsh/aliases
+
+# local aliases
+alias prod-es='ssh m6webdev@cron55-replay.m6web.fr -L 9201:vip-es-6play.m6web.fr:80 -L 15673:prod-rabbit-6play.m6web.fr:15672'
+alias preprod-es='ssh m6webdev@pp-cron55-replay.m6web.fr -L 9202:pp-es-vip.m6web.fr:80'
+
+# man coloration
+man() {
+  env LESS_TERMCAP_mb=$'\E[01;31m' \
+  LESS_TERMCAP_md=$'\E[01;38;5;74m' \
+  LESS_TERMCAP_me=$'\E[0m' \
+  LESS_TERMCAP_se=$'\E[0m' \
+  LESS_TERMCAP_so=$'\E[38;5;246m' \
+  LESS_TERMCAP_ue=$'\E[0m' \
+  LESS_TERMCAP_us=$'\E[04;38;5;146m' \
+  man "$@"
+}
+
+#######
+## Projects access aliases
+#######
+HOME="/Users/mrandy"
+
+function addAlias {
+    for dir in `ls $1`; do
+        alias $dir="cd $1/$dir"
+    done;
+}
+
+#addAlias $HOME/Workspace
+#addAlias $HOME/Workspace/m6web
+#addAlias $HOME/Workspace/perso
+#addAlias $HOME/Workspace/public
+#addAlias $HOME/Workspace/Replay
+#addAlias $HOME/Workspace/external
+#######
+
+#######
+## tool-composer
+#######
+export TOOL_COMPOSER="/Users/mikaelrandy/Workspace/m6web/tool-composer"
+export COMPOSER_HOME="$TOOL_COMPOSER/composer-home"
+#######
+
+alias cache-sf-permissions='sudo chmod +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs && sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs'
+
+# Avoid zsh correction on git commands
+alias git='nocorrect git'
+alias st='nocorrect st'
+
+plugins=(git brew composer symfony2 rbenv vagrant gem docker golive)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/Vendors/golive-cli/bin 
+
+# Homebrew
+export PATH=/usr/local/bin:$PATH
+
+export PATH="/usr/local/sbin:$PATH"
+

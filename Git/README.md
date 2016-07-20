@@ -11,7 +11,7 @@ Surcharge de configuration pour Git
 * Dans le fichier `~/.gitconfig`, ajouter le bloc suivant pour inclure le fichier qui est dans ce repo
 
 ```
-[core]
-    include = /path/to/repo/Save/Git/.gitconfig
+[include]
+    path = /path/to/repo/Save/Git/.gitconfig
 ``` 
 

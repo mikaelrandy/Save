@@ -11,6 +11,11 @@ else
 #  exit 1
 fi
 
+# Overload to put text in white
+prompt_dir() {
+  prompt_segment blue white '%~'
+}
+
 
 ## Main prompt
 build_prompt() {

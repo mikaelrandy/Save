@@ -9,6 +9,8 @@ alias la='ls -lA'
 alias l='ls -CF'
 alias lh='ls -lh'
 
+alias sf='app/console'
+
 # Nginx
 alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'

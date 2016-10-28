@@ -2,6 +2,18 @@
 
 Partage de ma configuration Zsh
 
+## Plugins
+
+Le fichier `plugins` contient mes plugins par défaut
+
+Pour l'utiliser, il suffit d'ajouter la ligne suivante dans le fichier `~/.zshrc` :
+
+```bash
+. /path/to/repo/Save/zsh/plugins
+```
+
+**NB : pour éviter des incompréhensions, il est conseillée de placer cette ligne juste aprés la directive `plugins` existante**
+
 ## Alias
 
 Le fichier `aliases` contient mes alias ZSH.

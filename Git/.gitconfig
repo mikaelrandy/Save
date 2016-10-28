@@ -6,6 +6,10 @@
   remote = yellow
   local = white
 
+[push]
+	# Avoid to set upstream branch 
+	default = current
+
 [alias]
   # Repo operations
   co = checkout

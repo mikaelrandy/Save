@@ -12,6 +12,7 @@
 
 [alias]
   # Repo operations
+  commit = commit -S
   co = checkout
   ci = commit
   amend = commit --amend

@@ -11,7 +11,6 @@ brew upgrade
 
 echo "## cleanup"
 brew cleanup -s
-brew cask cleanup
 
 echo "## diagnosis"
 brew doctor

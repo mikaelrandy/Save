@@ -1,1 +1,1 @@
-plugins=($plugins git composer symfony2)
+plugins=($plugins git composer symfony2 z colored-man-page)
